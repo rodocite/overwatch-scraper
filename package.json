@@ -1,0 +1,17 @@
+{
+  "name": "overwatch_scraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scrape-overwatch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "pg": "^6.0.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^3.23.3"
+  }
+}
