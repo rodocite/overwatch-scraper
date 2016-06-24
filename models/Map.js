@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize')
 const db = require('../db.config.js')
 
-const Hero = db.define('heroes', {
+const Map = db.define('maps', {
   id: {
     type: Sequelize.INTEGER,
     primaryKey: true,
@@ -19,8 +19,8 @@ const Hero = db.define('heroes', {
 },
 { timestamps: false });
 
-Hero.sync().then(() => {
-  Hero.describe().then(table => console.log('\n', table));
+Map.sync().then(() => {
+  Map.describe().then(table => console.log('\n', table));
 });
 
-module.exports = Hero;
+module.exports = Map;
